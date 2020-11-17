@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yukiko Saito | S. Kainuma</title>
+    <link>https://kainume.github.io/author/yukiko-saito/</link>
+      <atom:link href="https://kainume.github.io/author/yukiko-saito/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yukiko Saito</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Aug 2020 16:33:08 +0900</lastBuildDate>
+    <image>
+      <url>https://kainume.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Yukiko Saito</title>
+      <link>https://kainume.github.io/author/yukiko-saito/</link>
+    </image>
+    
+    <item>
+      <title>China&#39;s Impact on Regional Employment: Propagation through Supply Chain and Co-agglomeration Pattern</title>
+      <link>https://kainume.github.io/publication/kainumasaito_2020/</link>
+      <pubDate>Mon, 24 Aug 2020 16:33:08 +0900</pubDate>
+      <guid>https://kainume.github.io/publication/kainumasaito_2020/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
