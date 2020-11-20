@@ -247,6 +247,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VGN574945G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-VGN574945G', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -282,7 +320,7 @@
   <meta property="og:description" content="Ph.D. Student in Economics"><meta property="og:image" content="https://kainume.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://kainume.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    
+    <meta property="og:updated_time" content="2020-11-17T16:08:16&#43;09:00">
   
 
   
@@ -587,188 +625,33 @@
 
 
 
+<div class="universal-wrapper pt-3">
+  <h1>Shuhei Kainuma</h1>
+</div>
+
 
 <section id="profile-page" class="pt-5">
   <div class="container">
     
     
-      
-      
-      
-      
 
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-
-      
-      
-      <img class="avatar avatar-circle" src="/author/shuhei-kainuma/avatar_hu46c34b1457f247a16b9b42ec6373467c_110714_270x270_fill_q90_lanczos_center.jpg" alt="Shuhei Kainuma">
-      
-
-      <div class="portrait-title">
-        <h2>Shuhei Kainuma</h2>
-        <h3>Ph.D. Student in Economics</h3>
-
-        
-        <h3>
-          <a href="https://www.u-tokyo.ac.jp/en/" target="_blank" rel="noopener">
-          <span>University of Tokyo</span>
-          </a>
-        </h3>
-        
-      </div>
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
+    
+    
+    
+    <div class="article-widget content-widget-hr">
+      <h3>Latest</h3>
+      <ul>
         
         <li>
-          <a href="/#contact" >
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
+          <a href="/publication/kainuma_2020/">Transition to Broader-Based Politics: The Role of Suffrage Extension in Early 20th Century Japan</a>
         </li>
         
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
         <li>
-          <a href="https://github.com/kainume" target="_blank" rel="noopener">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="/files/cv.pdf" >
-            <i class="ai ai-cv big-icon"></i>
-          </a>
+          <a href="/publication/kainumasaito_2020/">China&#39;s Impact on Regional Employment: Propagation through Supply Chain and Co-agglomeration Pattern</a>
         </li>
         
       </ul>
-
     </div>
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-    
-
-    <!-- Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. -->
-<p>I am a Ph.D. student in Economics at the University of Tokyo, Japan.
-My research interests lie in political economics at the intersection of economic history and development economics, from applied microeconomic perspectives.
-I was born and raised in Nagano before moving to Osaka for my undergraduate study.</p>
-
-
-    <div class="row">
-
-      
-      <div class="col-md-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Political Economics</li>
-          
-          <li>Economic History</li>
-          
-          <li>Development Economics</li>
-          
-          <li>Applied Microeconomics</li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-md-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">Ph.D. Student, Economics, Apr. 2020 - Present</p>
-              <p class="institution">University of Tokyo, Japan</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">M.A. in Economics, Mar. 2020</p>
-              <p class="institution">University of Tokyo, Japan</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">Bachelor of Laws, Mar. 2018</p>
-              <p class="institution">Osaka University, Japan</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">Occasional Studies, Feb. 2016 - Jan. 2017</p>
-              <p class="institution">University of the Free State, Republic of South Africa</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
-
-    
-
-    
-    
     
   </div>
 </section>
